@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Arbitrage</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link">
+      <a class="page-header__link" href="#">
         <img class="page-header__logo" src="img/logo-school@1x.png" width="109" height="30" alt="Логотип «ШКОЛА ТРАФИКА»">
       </a>
     </header>
@@ -17,14 +19,16 @@
       <article class="course">
         <a class="course__link" href="#">
           <h1 class="course__title">
-            <span>Видеокурс</span> ”Вступление в товарный арбитраж трафика”
+            <span>Видеокурс</span> „Вступление в товарный арбитраж трафика“
           </h1>
-          <p class="course__text">Получи бесплатный видеокурс по товарному арбитражу для новичков</p>
-          <img class="course__picture" src="img/screens-mobile@1x.png" width="245" height="240" alt="Видеокурс">
+          <p class="course__text">Получи бесплатный видеокурс по&#160;товарному арбитражу для новичков</p>
+          <p class="course__picture">
+            <img src="img/screens-mobile@1x.png" width="245" height="242" alt="Видеокурс">
+          </p>
         </a>
         <form class="course__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <label class="visually-hidden" for="user-e-mail">Ваш e-mail</label>
-          <input class="form__input" id="user-e-mail" type="email" name="email" placeholder="введите ваш e-mail">
+          <input class="form__input" id="user-e-mail" type="email" name="email" placeholder="введите ваш e-mail" required>
           <button class="form__button" type="submit">Скачать видеокурс</button>
         </form>
       </article>
@@ -38,11 +42,11 @@
           </li>
           <li class="advantages__item advantages__item--master">
             <h3 class="advantages__title">Овладеешь</h3>
-            <p class="advantages__text">наиболее выгодной и востребованной профессией 2016 года</p>
+            <p class="advantages__text">наиболее выгодной и&#160;востребованной профессией 2016 года</p>
           </li>
           <li class="advantages__item advantages__item--money">
             <h3 class="advantages__title">Зарабатывай</h3>
-            <p class="advantages__text">деньги в любой точке мира</p>
+            <p class="advantages__text">деньги в любой точке&#160;мира</p>
           </li>
         </ul>
       </section>
@@ -53,17 +57,17 @@
           <span>Автор видеокурса</span> Артур Гарнаев
         </h2>
         <p class="about-author__info">Арбитражник, рекламодатель, интернет-предпрениматель</p>
-        <p class="about-author__text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>
+        <p class="about-author__text">Прокрутил рекламы более чем на&#160;50000$ Ежедневно продаю более 150 физический товаров притом, что трафик на рекламу лью сам!</p>
       </section>
 
       <section class="results">
-        <h2 class="results__title">После прохождения бесплатного видеокурса ты узнаешь:</h2>
+        <h2 class="results__title">После прохождения бесплатного видеокурса ты&#160;узнаешь:</h2>
         <ul class="results__list">
           <li class="results__item">
-            <span>1</span>В чем суть арбитража трафика?
+            <span>1</span>В чем суть<br> арбитража трафика?
           </li>
           <li class="results__item">
-            <span>2</span>Как заработать на арбитраже трафика?
+            <span>2</span>Как заработать на&#160;арбитраже трафика?
           </li>
           <li class="results__item">
             <span>3</span>Сколько можно заработать на товарке?
@@ -77,34 +81,36 @@
         </ul>
       </section>
 
-      <section class="course-promo">
-        <h2 class="course-promo__title">Скачай видеокурс сейчас</h2>
-        <p class="course-promo__info">и получи крутой бонус совершенно бесплатно!</p>
-        <table class="course-promo__table">
-          <caption class="course-promo__caption">Предложение ограничено! Успей!</caption>
+      <section class="promo">
+        <h2 class="promo__title">Скачай видеокурс сейчас</h2>
+        <p class="promo__info">и получи крутой бонус совершенно бесплатно!</p>
+        <table class="promo__table">
+          <caption class="promo__caption">Предложение ограничено! Успей!</caption>
           <tr>
-            <td>0</td>
-            <td>9</td>
-            <td>34</td>
-            <td>11</td>
+            <td class="promo__number">0</td>
+            <td class="promo__number">9</td>
+            <td class="promo__number">34</td>
+            <td class="promo__number">11</td>
           </tr>
           <tr>
-            <th>дней</th>
-            <th>часов</th>
-            <th>минут</th>
-            <th>секунд</th>
+            <td class="promo__time">дней</td>
+            <td class="promo__time">часов</td>
+            <td class="promo__time">минут</td>
+            <td class="promo__time">секунд</td>
           </tr>
         </table>
-        <form class="course-promo__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+        <form class="promo__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <label class="visually-hidden" for="promo-e-mail">Ваш e-mail</label>
-          <input class="form__input" id="promo-e-mail" type="email" name="email" placeholder="введите ваш e-mail">
+          <input class="form__input" id="promo-e-mail" type="email" name="email" placeholder="введите ваш e-mail" required>
           <button class="form__button" type="submit">Скачать видеокурс</button>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <p>“ШКОЛА ТРАФИКА" — школа товарного арбитража трафика Артура Гарнаева (с) 2016</p>
+      <p class="page-footer__copyright">
+        <span>„Школа трафика“</span> — школа товарного арбитража&#160;трафика Артура Гарнаева (с) 2016
+      </p>
     </footer>
 
   </body>

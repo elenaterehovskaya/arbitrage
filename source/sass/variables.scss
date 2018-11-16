@@ -1,35 +1,19 @@
 // Цвета от светлому к темному
-$white:          #ffffff;
-$grey-light:     #f2f2f2;
-$grey:           #e5e5e5;
-$pink:           #d22856;
-$orange:         #f25b26;
-$green-bright:   #3dc644;
-$green:          #2aab6d;
-$blue:           #283645;
-$blue-dark:      #1d2631;
-$black:          #000000;
-
-$text-white:     $white;
-$text-primary:   $pink;
-$text-dark:      $blue;
-$text-black:     $black;
-
-// Размеры шрифтов и межстрочных интервалов
-$font-size-xs:   12px;
-$font-size-sm:   14px;
-$font-size-md:   18px;
-$font-size-lg:   24px;
-$font-size-xl:   30px;
-
-$line-height-sm: 24px;
-$line-height-md: 30px;
+$white:         #ffffff;
+$grey:          #bdbdbd;
+$grey-dark:     #afafaf;
+$orange-light:  #f7a83a;
+$orange:        #f99406;
+$orange-dark:   #db8000;
+$blue-dark:     #0b1119;
+$blue-black:    #080d13;
+$black:         #000000;
 
 // Основные размеры экранов
-$mobile-width:   320px;
-$tablet-width:   660px;
-$desktop-width:  960px;
+$mobile-width:  320px;
+$tablet-width:  750px;
+$desktop-width: 1170px;
 
 // Разрешение ретины
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
+$retina-dpi:    144dpi;
+$retina-dppx:   1.5dppx;

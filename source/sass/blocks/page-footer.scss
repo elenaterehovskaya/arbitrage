@@ -1,0 +1,21 @@
+.page-footer {
+  min-height: 60px;
+  padding-top: 22px;
+  background-color: $blue-black;
+}
+
+.page-footer__copyright {
+  width: 290px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: $grey;
+
+  & span {
+    text-transform: uppercase;
+    color: $orange;
+  }
+}

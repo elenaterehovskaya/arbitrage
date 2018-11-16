@@ -1,0 +1,67 @@
+.advantages {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 210px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  position: relative;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 44px;
+  padding-top: 100px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--fast::before {
+    width: 115px;
+    height: 71px;
+    background: url("../img/icon-fast.svg") no-repeat 0 0;
+  }
+
+  &--master::before {
+    top: 10px;
+    width: 68px;
+    height: 61px;
+    background: url("../img/icon-master.svg") no-repeat 0 0;
+  }
+
+  &--money::before {
+    width: 67px;
+    height: 67px;
+    background: url("../img/icon-money.svg") no-repeat 0 0;
+  }
+}
+
+.advantages__title,
+.advantages__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-weight: 300;
+  color: $grey;
+}

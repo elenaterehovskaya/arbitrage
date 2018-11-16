@@ -1,0 +1,89 @@
+.promo {
+  padding-top: 83px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: url("../img/bg-promo-mobile@1x.png") no-repeat 50% 0;
+}
+
+.promo__title {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.promo__info {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 0 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: $orange;
+  text-shadow: 0 3px 27px rgba($orange, 0.6);
+  text-transform: uppercase;
+}
+
+.promo__table {
+  width: 310px;
+  margin: 0 auto;
+  border-spacing: 10px;
+}
+
+.promo__caption {
+  position: relative;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: $grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 200px;
+    height: 2px;
+    background-color: rgba($white, 0.11);
+    transform: translateX(-50%);
+  }
+}
+
+.promo__number {
+  width: 25%;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: $white;
+  border-bottom: 1px solid $white;
+
+  &:first-child {
+    color: rgba($white, 0.11);
+    border-bottom: 1px solid rgba($white, 0.11);
+  }
+}
+
+.promo__time {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: $grey;
+}
+
+.promo__form {
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0 15px;
+}
