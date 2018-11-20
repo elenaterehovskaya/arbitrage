@@ -45,14 +45,14 @@
   width: 290px;
   margin: 0 auto;
   padding: 0 15px;
+}
 
-  & img {
-    display: block;
-    width: 245px;
-    height: 242px;
-    margin-top: -10px;
-    margin-left: 40px;
-  }
+.course__picture-image {
+  display: block;
+  width: 245px;
+  height: 242px;
+  margin-top: -10px;
+  margin-left: 40px;
 }
 
 .course__form {
