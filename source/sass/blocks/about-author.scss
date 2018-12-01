@@ -1,22 +1,76 @@
 .about-author {
+  position: relative;
   width: 290px;
   margin: 0 auto;
-  padding-bottom: 65px;
-  text-align: center;
-  border: 3px solid $orange;
+  padding: 0 15px;
+  padding-top: 140px;
+
+  box-shadow: inset 0 0 0 1px red;
+
+  @media (min-width: $tablet-width) {
+    width: 580px;
+    padding-top: 45px;
+    padding-left: 155px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 734px;
+    padding-top: 60px;
+    padding-left: 308px;
+    padding-right: 128px;
+  }
 }
 
 .about-author__picture {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 185px;
   height: 239px;
-  margin: 0 auto;
-  margin-top: -140px;
-  margin-bottom: 15px;
   box-shadow: 0 200px 200px 0 rgba($white, 0.1);
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 105px;
+    left: 15px;
+    width: 284px;
+    height: 366px;
+    box-shadow: 200px -50px 400px 0 rgba($white, 0.1);
+    transform: translateX(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 120px;
+    left: 128px;
+    width: 369px;
+    height: 476px;
+  }
+}
+
+.about-author__wrapper {
+  padding-top: 115px;
+  padding-bottom: 65px;
+  text-align: center;
+  border: 3px solid $orange;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-bottom: 125px;
+    padding-left: 174px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 130px;
+    padding-right: 70px;
+    padding-bottom: 168px;
+    padding-left: 265px;
+  }
 }
 
 .about-author__title {
+  position: relative;
   margin: 0;
   margin-bottom: 8px;
   font-weight: 400;
@@ -33,12 +87,40 @@
     color: $orange;
     text-shadow: 0 3px 27px rgba($orange, 0.6);
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -100px;
+      width: 300px;
+      height: 2px;
+      background-color: rgba($white, 0.1);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 44px;
+
+    &::after {
+      bottom: -8px;
+      left: -200px;
+      width: 400px;
+    }
+  }
 }
 
 .about-author__info,
 .about-author__text {
   margin: 0;
   font-weight: 300;
+  letter-spacing: 1px;
   color: $grey;
 }
 
@@ -46,11 +128,21 @@
   margin-bottom: 35px;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .about-author__text {
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 1px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
