@@ -13,12 +13,16 @@
 * Используемые фреймворки: _нет_
 * Кроссбраузерность: _Chrome, Firefox, Opera, Safari, Edge и IE11_
 
+## Ссылки
+
+#### Главная страница: <a href="https://elenaterehovskaya.github.io/arbitrage" target="_blank">https://elenaterehovskaya.github.io/arbitrage</a>
+
 ---
 
 <p>
   <img width="150" alt="Мобильная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-mobile.jpg">
   <img valign="top" width="310" alt="Планшетная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-tablet.jpg">
-  <img valign="top" width="410" alt="Десктопная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-desktop.jpg">
+  <img valign="top" width="415" alt="Десктопная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-desktop.jpg">
 </p>
 
 ---
