@@ -1,17 +1,16 @@
 .about-author {
-  position: relative;
   width: 290px;
   margin: 0 auto;
   padding: 0 15px;
   padding-top: 140px;
-
-  box-shadow: inset 0 0 0 1px red;
 
   @media (min-width: $tablet-width) {
     width: 580px;
     padding-top: 45px;
     padding-left: 155px;
     padding-right: 15px;
+
+    box-shadow: inset 0 0 0 1px red;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,33 +21,8 @@
   }
 }
 
-.about-author__picture {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 185px;
-  height: 239px;
-  box-shadow: 0 200px 200px 0 rgba($white, 0.1);
-  transform: translateX(-50%);
-
-  @media (min-width: $tablet-width) {
-    top: 105px;
-    left: 15px;
-    width: 284px;
-    height: 366px;
-    box-shadow: 200px -50px 400px 0 rgba($white, 0.1);
-    transform: translateX(0);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 120px;
-    left: 128px;
-    width: 369px;
-    height: 476px;
-  }
-}
-
 .about-author__wrapper {
+  position: relative;
   padding-top: 115px;
   padding-bottom: 65px;
   text-align: center;
@@ -57,7 +31,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 40px;
     padding-bottom: 125px;
-    padding-left: 174px;
+    padding-left: 170px;
     text-align: left;
   }
 
@@ -66,6 +40,32 @@
     padding-right: 70px;
     padding-bottom: 168px;
     padding-left: 265px;
+  }
+}
+
+.about-author__picture {
+  position: absolute;
+  top: -142px;
+  left: 50%;
+  width: 185px;
+  height: 239px;
+  box-shadow: 0 200px 200px 0 rgba($white, 0.07);
+  transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: -142px;
+    width: 284px;
+    height: 366px;
+    box-shadow: 200px -50px 400px 0 rgba($white, 0.07);
+    transform: translate(0, -190px);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -185px;
+    width: 369px;
+    height: 476px;
+    transform: translate(0, -240px);
   }
 }
 
@@ -95,7 +95,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -15px;
       left: -100px;
       width: 300px;
       height: 2px;
@@ -107,6 +107,7 @@
     margin-bottom: 25px;
     font-size: 40px;
     line-height: 44px;
+    letter-spacing: 1.5px;
 
     &::after {
       bottom: -8px;
