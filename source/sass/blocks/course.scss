@@ -1,41 +1,33 @@
 .course {
-  background: url("../img/bg-screens-mobile@1x.png") no-repeat 50% 130px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-screens-mobile@2x.png");
-  }
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
-}
-
-.course__wrapper {
   position: relative;
-  width: 290px;
-  margin: 0 auto;
-  padding: 0 15px;
-  padding-top: 30px;
-  text-align: center;
+  padding-top: 34px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 390px;
+    height: 374px;
+    background: url("../img/bg-screens-mobile@1x.png") no-repeat 0 0;
+    transform: translateX(-50%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-screens-mobile@2x.png");
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    width: 720px;
-    padding-top: 70px;
-    padding-bottom: 110px;
-    text-align: left;
-
-    box-shadow: inset 0 0 0 1px red;
+    padding-top: 64px;
+    padding-bottom: 104px;
 
     &::after {
-      content: "";
-      position: absolute;
-      top: -60px;
-      left: 320px;
-      z-index: -1;
+      top: 32px;
       width: 537px;
       height: 514px;
-      background: url("../img/bg-screens-tablet@1x.png") no-repeat 0 0;
+      background-image: url("../img/bg-screens-tablet@1x.png");
+      transform: translateX(-50px);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-screens-tablet@2x.png");
@@ -44,23 +36,55 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1140px;
-    padding-top: 85px;
-    padding-bottom: 218px;
+    padding-bottom: 260px;
 
     &::after {
-      top: -180px;
-      left: 465px;
+      top: -85px;
       width: 895px;
       height: 856px;
-      background: url("../img/bg-screens-desktop@1x.png") no-repeat 0 0;
-      background-size: 895px 856px;
+      background-image: url("../img/bg-screens-desktop@1x.png");
+      transform: translateX(-120px);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-screens-desktop@2x.png");
       }
     }
   }
+}
+
+.course__wrapper {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1140px;
+  }
+}
+
+.course__header {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.course__logo {
+  display: block;
+  width: 109px;
+  height: 30px;
 }
 
 .course__title {
@@ -160,15 +184,15 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
-    top: 50px;
+    top: 80px;
     right: -40px;
     width: 338px;
     height: 332px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    right: -70px;
+    top: 20px;
+    right: -75px;
     width: 563px;
     height: 553px;
   }
@@ -184,6 +208,6 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-top: 60px;
+    margin-top: 65px;
   }
 }
