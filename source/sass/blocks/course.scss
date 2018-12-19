@@ -6,11 +6,12 @@
   &::after {
     content: "";
     position: absolute;
-    top: 150px;
+    top: 195px;
     left: 50%;
     width: 390px;
     height: 374px;
     background: url("../img/bg-screens-mobile@1x.png") no-repeat 0 0;
+    background-size: 390px 374px;
     transform: translateX(-50%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -27,6 +28,7 @@
       width: 537px;
       height: 514px;
       background-image: url("../img/bg-screens-tablet@1x.png");
+      background-size: 537px 514px;
       transform: translateX(-50px);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -43,6 +45,7 @@
       width: 895px;
       height: 856px;
       background-image: url("../img/bg-screens-desktop@1x.png");
+      background-size: 895px 856px;
       transform: translateX(-120px);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

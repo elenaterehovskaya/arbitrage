@@ -149,7 +149,7 @@
 
   &:first-child {
     color: rgba($white, 0.11);
-    border-bottom: 1px solid rgba($white, 0.11);
+    border-bottom: 2px solid rgba($white, 0.11);
   }
 
   @media (min-width: $tablet-width) {
