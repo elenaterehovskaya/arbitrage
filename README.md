@@ -19,9 +19,9 @@
 
 ---
 
-<p>
-  <img width="600" alt="Десктопная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-desktop.jpg">
-</p>
+<a href="https://elenaterehovskaya.github.io/arbitrage" target="_blank">
+  <img width="500" alt="Десктопная версия сайта «Арбитраж»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/arbitrage-desktop.jpg">
+</a>
 
 ---
 
